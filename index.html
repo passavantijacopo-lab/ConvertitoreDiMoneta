@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS PERSONALE -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS DI BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <!-- ICONE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>Convertitore di valuta</title>
+</head>
+
+<body>
+
+    <h1 class="titolo text-center"> CONVERTITORE DI VALUTA </h1>
+
+    <div class="dark d-flex justify-content-center"><i id="off" onclick="accendi()" class="bi bi-toggle2-off"></i>
+        <p class="parag">Dark Mode</p>
+    </div>
+
+    <div class="hero text-center mb-5">
+        <h1 class="valuta mb-4">Euro</h1>
+
+        <img class="img mb-4" src="./images/europa.svg" alt="Europa">
+
+        <form>
+            <input oninput="converti()" type="number" id="input">
+        </form>
+
+    </div>
+
+    <div class="row text-center mt-5 justify-content-around d-flex">
+
+        <!-- VALUTA 1 | DOLLARO -->
+
+        <div class="col-md-4 col-sm-12 valuta">
+            <h1 class="valuta mb-4">Dollaro</h1>
+
+            <img class="img mb-3" src="./images/usa.webp" alt="usa">
+
+            <p class="para fs-3 fw-bolder" id="Dollaro"></p>
+        </div>
+
+        <!-- VALUTA 2 | STERLINA -->
+
+        <div class="col-md-4 col-sm-12 valuta">
+            <h1 class="valuta mb-4">Sterlina</h1>
+
+            <img class="img mb-3" src="./images/uk.svg" alt="uk">
+
+            <p class="para fs-3 fw-bolder" id="Sterlina"></p>
+        </div>
+
+        <!-- VALUTA 3 | YEN -->
+
+        <div class="col-md-4 col-sm-12 valuta">
+            <h1 class="valuta mb-4">Yen</h1>
+
+            <img class="img mb-3" src="./images/giappone.svg" alt="giappone">
+
+            <p class="para fs-3 fw-bolder" id="Yen"></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- SCRIPT PERSONALE -->
+    <script src="./js/script.js"></script>
+
+    <!-- SCRIPT DI BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
